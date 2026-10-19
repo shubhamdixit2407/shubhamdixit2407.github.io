@@ -147,6 +147,18 @@
 .activity-list li{padding:16px 14px}.activity-list h4{margin:8px 0}.content>.contact-section{margin-top:42px}
 @media(max-width:680px){.content>.section{margin-top:32px;padding-top:23px}.publication,.publication.phd-publication,.innovation-card{padding:12px 12px 12px 27px;gap:7px;grid-template-columns:minmax(0,1fr)}.publication::before,.innovation-card::before{left:11px;top:20px;width:5px;height:5px}.publication h3,.innovation-card h3{font-size:13px}.entry-actions{justify-content:flex-start;gap:14px}.innovation-link{justify-self:start}.about-awards .detail-list{gap:8px}.about-awards .detail-list li{padding:10px}.about-awards .detail-list li:first-child{padding-right:52px}.about-awards .certificate-preview{width:36px;right:7px}.about-awards .certificate-preview span{font-size:7px}}
 
+/* Awards span both About columns with readable, compact cards. */
+.about-awards{grid-column:1 / -1;margin-top:0;padding-top:22px}
+.about-awards .subsection-title{font-size:24px;font-weight:650;margin-bottom:16px}
+.about-awards .detail-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.about-awards .detail-list li,.about-awards .detail-list li:last-child{padding:20px 22px;margin:0;border:1px solid #d0e1df;border-left:3px solid var(--teal);border-radius:6px;min-height:118px;display:flex;flex-direction:column;justify-content:center}
+.about-awards .detail-list strong{font-size:16px;line-height:1.4}
+.about-awards .detail-list p{font-size:14px;line-height:1.6;margin-top:7px}
+.about-awards .detail-list li:first-child{padding-right:125px}
+.about-awards .certificate-preview{width:88px;right:18px;top:50%;transform:translateY(-50%);padding:0}
+.about-awards .certificate-preview span{font-size:11px;padding-top:5px;line-height:1.4;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:680px){.about-awards .detail-list{grid-template-columns:1fr;gap:12px}.about-awards .subsection-title{font-size:23px}.about-awards .detail-list li,.about-awards .detail-list li:last-child{padding:18px;min-height:112px}.about-awards .detail-list li:first-child{padding-right:114px}.about-awards .certificate-preview{width:78px;right:16px}.about-awards .detail-list strong{font-size:16px}.about-awards .detail-list p{font-size:14px}}
+
 </style>
 
 </head>
@@ -210,7 +222,7 @@
 <p>I completed my PhD in Hydraulics and Water Resources Engineering at <strong><a href="https://www.iitbhu.ac.in/" rel="noopener noreferrer" target="_blank">Indian Institute of Technology (BHU), Varanasi, India</a></strong>, under the supervision of <strong><a href="https://www.iitbhu.ac.in/dept/civ/people/kkpciv" rel="noopener noreferrer" target="_blank">Prof. K. K. Pandey</a></strong>. My doctoral research was supported by the <strong>Prime Minister’s Research Fellowship (PMRF)</strong>.</p>
 <p>During my PhD, I examined two connected sources of uncertainty that limit the adoption of nonstationary frameworks for estimating design levels under a changing climate: how extreme events are defined and which climatic covariates are used to explain them. This led to a framework that accounts for nonstationarity in rainfall occurrence and severity separately, allowing their distinct climatic associations and contributions to design return levels to be examined.</p>
 <div class="button-row"><a class="button primary" href="#publications">View publications <span aria-hidden="true">↗</span></a><a class="button secondary" href="CV_Shubham_Dixit.pdf" rel="noopener noreferrer" target="_blank">View CV <span aria-hidden="true">↗</span></a></div>
-<div class="thesis"><span class="eyebrow">DOCTORAL THESIS</span><p><strong>Title:</strong> Climate-Informed Return Level Estimation of Extreme Precipitation: A Diagnostic Non-Stationary Framework with Frequency-Severity Decomposition</p><span class="small">Defended September 2026</span></div><div class="about-awards"><h3 class="subsection-title">Awards &amp; support</h3><ul class="detail-list"><li><strong>Prime Minister’s Research Fellowship</strong><p>Doctoral research support at IIT (BHU), Varanasi.</p><a aria-label="Open PMRF completion certificate PDF in a new tab" class="certificate-preview" href="PMRF-Completion-Certificate.pdf" rel="noopener noreferrer" target="_blank"><img alt="Shubham Dixit’s Prime Minister’s Research Fellowship completion certificate" decoding="async" height="708" loading="lazy" src="pmrf-certificate-preview.webp" width="1000"/><span>Certificate ↗</span></a></li><li><strong title="Anusandhan National Research Foundation">ANRF Student Travel Grant</strong><p>Travel support for AGU 2025, New Orleans, USA.</p></li></ul></div>
+<div class="thesis"><span class="eyebrow">DOCTORAL THESIS</span><p><strong>Title:</strong> Climate-Informed Return Level Estimation of Extreme Precipitation: A Diagnostic Non-Stationary Framework with Frequency-Severity Decomposition</p><span class="small">Defended September 2026</span></div>
 </div>
 <div class="journey">
 <p class="eyebrow">BACKGROUND</p>
@@ -222,7 +234,7 @@
 <li class="timeline-academic"><span class="journey-kind">Academic qualification</span><span class="period">2012–2016</span><h3>BTech · Civil Engineering</h3><p>Noida Institute of Engineering and Technology, Greater Noida, India</p></li>
 </ol>
 </div>
-</section>
+<div class="about-awards"><h3 class="subsection-title">Awards &amp; support</h3><ul class="detail-list"><li><strong>Prime Minister’s Research Fellowship</strong><p>Doctoral research support at IIT (BHU), Varanasi.</p><a aria-label="Open PMRF completion certificate PDF in a new tab" class="certificate-preview" href="PMRF-Completion-Certificate.pdf" rel="noopener noreferrer" target="_blank"><img alt="Shubham Dixit’s Prime Minister’s Research Fellowship completion certificate" decoding="async" height="708" loading="lazy" src="pmrf-certificate-preview.webp" width="1000"/><span>Certificate ↗</span></a></li><li><strong title="Anusandhan National Research Foundation">ANRF Student Travel Grant</strong><p>Travel support for AGU 2025, New Orleans, USA.</p></li></ul></div></section>
 <section aria-labelledby="research-heading" class="section research-section" id="research">
 <div class="section-heading"><div><h2 class="section-title" id="research-heading">Research</h2></div></div>
 <p class="research-intro">This research grew out of my PhD, which aimed to reduce uncertainties in modelling choices that limit the practical adoption of non-stationary frameworks for design rainfall estimation under a changing climate. The three contributions address how extreme events are defined, how climatic covariates are selected, and how changes in rainfall occurrence and severity are represented.</p>
@@ -251,7 +263,6 @@
 </section>
 <section aria-labelledby="publications-heading" class="section" id="publications">
 <div class="section-heading"><div><h2 class="section-title" id="publications-heading">Publications</h2></div></div>
-
 <div class="publication-controls" hidden="">
 <div aria-label="Publication type" class="filters" role="tablist"><button aria-controls="publication-panel" aria-selected="true" class="filter active" data-filter="journal" id="tab-journal" role="tab" tabindex="0">Journal articles</button><button aria-controls="publication-panel" aria-selected="false" class="filter" data-filter="preprint" id="tab-preprint" role="tab" tabindex="-1">Preprints</button><button aria-controls="publication-panel" aria-selected="false" class="filter" data-filter="chapter" id="tab-chapter" role="tab" tabindex="-1">Book chapters</button></div>
 <label class="year-control" for="year-filter">Year <select id="year-filter"><option value="all">All years</option><option value="2026">2026</option><option value="2024">2024</option><option value="2023">2023</option><option value="2019">2019</option><option value="undated">Year not assigned</option></select></label>
